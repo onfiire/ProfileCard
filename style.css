@@ -59,8 +59,6 @@ body {
     line-height: 1.5;
     font-size: 1.6rem;
     font-family: var(--ff-primary);
-    
-   
 }
 /*--------------Reset-----------------*/
 
@@ -81,8 +79,6 @@ body {
     height: 100vh;
     width: 100%;
     text-align: center;
-     
-     
  }
 
  .hero {
@@ -111,7 +107,6 @@ body {
     grid-area: grid-card;
     border-radius: 10px;
     background-color: white;
-    
  }
   
  .grid-stat { grid-area: grid-stat; 
@@ -129,9 +124,7 @@ body {
     padding: 1em;
  }
   
-  .grid-info { grid-area: grid-info;
-    
- }
+  .grid-info { grid-area: grid-info;}
 
  .icon {
     position: relative;
@@ -141,9 +134,6 @@ body {
     border: 5px solid white;
  }
 
- p {
-
- }
  .top {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
