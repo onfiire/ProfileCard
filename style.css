@@ -1,0 +1,213 @@
+/*--------------Font------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+/*--------------Font------------------*/
+
+/*--------------Reset-----------------*/
+:root {
+    --darkcyan: hsl(185, 75%, 39%);
+    --verydarkblue: hsl(229, 23%, 23%);
+    --darkgrayblue: hsl(227, 10%, 46%);
+    --darkgray: hsl(0, 0%, 59%);
+
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --ff-primary: 'Kumbh Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+    list-style: none;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+@media (prefers-reduced-motion: reduce) {
+   html:focus-within {
+    scroll-behavior: auto;
+   }
+   *,
+   *::before,
+   *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+   }
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    overflow: hidden;
+    background-image: url(images\bg-pattern-bottom.svg);
+    background-color: var(--darkcyan);
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-family: var(--ff-primary);
+    
+   
+}
+/*--------------Reset-----------------*/
+
+/*---------------Body-----------------*/
+/*---------------Body-----------------*/
+
+/*---------------Grid-----------------*/
+
+ .container {  display: grid;
+    grid-template-columns: 1.1fr 350px 1.1fr;
+    grid-template-rows: 1fr 375px 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". grid-card ."
+      ". . .";
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+     
+     
+ }
+
+ .hero {
+    position: absolute;
+    top: -440px;
+    left: -130px;
+    z-index: -1;
+ }
+
+ .hero1 {
+    position: absolute;
+    right: -130px;
+    bottom: -510px;
+    z-index: -1;
+ }
+  
+ .grid-card {  display: grid;
+    grid-template-columns: 1.1fr 0.8fr 1.1fr;
+    grid-template-rows: 1fr 1fr 90px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "grid-info grid-info grid-info"
+      "grid-info grid-info grid-info"
+      "grid-stat grid-stat2 grid-stat3";
+    grid-area: grid-card;
+    border-radius: 10px;
+    background-color: white;
+    
+ }
+  
+ .grid-stat { grid-area: grid-stat; 
+    border-top: 1px solid lightgray;
+    padding: 1em;
+ }
+  
+ .grid-stat2 { grid-area: grid-stat2;
+    border-top: 1px solid lightgray; 
+    padding: 1em;
+ }
+  
+  .grid-stat3 { grid-area: grid-stat3;
+    border-top: 1px solid lightgray;
+    padding: 1em;
+ }
+  
+  .grid-info { grid-area: grid-info;
+    
+ }
+
+ .icon {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 90px;
+    margin-top: -3.5em;
+    border: 5px solid white;
+ }
+
+ p {
+
+ }
+ .top {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+ }
+ 
+ h1 {
+    font-weight: var(--fw-700);
+    font-size: 1.8rem;
+    padding-top: 0.8em;
+    padding-bottom: 0.5em;
+    color: var(--verydarkblue);
+ }
+
+ p {
+    font-weight: var(--fw-400);
+    font-size: 1.4rem;
+    color: var(--darkgrayblue);
+ }
+
+ h1 span {
+    color: var(--darkgrayblue);
+    font-weight: var(--fw-400);
+    padding-left: 0.4em;
+ }
+
+ h2 {
+    font-size: 1.8rem;
+    font-weight: var(--fw-700);
+    color: var(--verydarkblue);
+ }
+
+ h3 {
+    font-size: 1.2rem;
+    font-weight: var(--fw-400);
+    letter-spacing: 2px;
+    color: var(--darkgrayblue);
+ }
+
+ @media screen and (max-width: 880px) {
+    .hero {
+        position: absolute;
+        top: -421px;
+        left: -561px;
+        max-width: 800px;
+    }
+    .hero1 {
+        position: absolute;
+        right: -561px;
+        bottom: -421px;
+        max-width: 800px;
+    }
+ }
+/*---------------Grid-----------------*/
+
+/*---------------img------------------*/
+/*---------------img------------------*/
+  
+/*---------------Text-----------------*/
+/*---------------Text-----------------*/
+
+/*---------------Link-----------------*/
+/*---------------Link-----------------*/
+
+/*--------------Button----------------*/
+/*--------------Button----------------*/
+
+
